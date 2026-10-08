@@ -1,0 +1,181 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>HyperTab poster · Hypertension screening from voice biomarkers · IEEE HealthCom 2026</title>
+<meta name="description" content="Poster for “A Prior-Data Fitted Tabular Network Framework for Hypertension Screening from Voice Biomarkers” (IEEE HealthCom 2026). HyperTab, a TabPFN-based in-context framework, ranks first of 14 models.">
+<link rel="canonical" href="https://airesmiguens.github.io/hypertab-poster/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HyperTab: hypertension screening from voice biomarkers (poster, IEEE HealthCom 2026)">
+<meta property="og:description" content="A TabPFN-based in-context framework ranks first of 14 models. Demographics carry most of the signal; voice alone is weak but real.">
+<meta property="og:url" content="https://airesmiguens.github.io/hypertab-poster/">
+<meta property="og:image" content="https://airesmiguens.github.io/hypertab-poster/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#4b647b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ac2b37'/%3E%3Cpath d='M18 16v32M46 16v32M18 32h28' stroke='%23fff' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #f3f5f7; --card: #ffffff; --ink: #1d2329; --ink2: #46525e; --muted: #647282; --line: #dde2e7;
+    --accent: #ac2b37; --accent-text: #ac2b37; --demo: #35679e; --voice: #17a398; --tint: #eef2f5;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #12161b; --card: #1b2128; --ink: #eef1f4; --ink2: #c2cad3; --muted: #97a3b0; --line: #2d3640;
+            --accent-text: #ef8a93; --demo: #6c9bd1; --voice: #36c2b6; --tint: #232b33; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 17px/1.55 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .wrap { max-width: 920px; margin: 0 auto; padding: 0 20px; }
+  a { color: var(--accent-text); text-underline-offset: 0.16em; }
+  a:focus-visible, .btn:focus-visible { outline: 3px solid #f2b84b; outline-offset: 3px; border-radius: 6px; }
+
+  /* hero: echoes the poster's slate background */
+  .hero { background: linear-gradient(180deg, #4b647b 0%, #2c3542 100%); color: #fff; padding: 30px 0 34px; }
+  .eyebrow { margin: 0 0 14px; font-size: 0.78rem; letter-spacing: 0.07em; text-transform: uppercase; color: #d5dee7; font-weight: 600; }
+  .eyebrow span { display: block; }
+  @media (min-width: 640px) {
+    .eyebrow { font-size: 0.82rem; letter-spacing: 0.09em; }
+    .eyebrow span { display: inline; white-space: nowrap; }
+    .eyebrow span + span::before { content: "\00b7"; margin: 0 0.5em 0 0.2em; }
+  }
+  .nw { white-space: nowrap; }
+  h1 { margin: 0 0 16px; font-size: clamp(1.55rem, 4.2vw + 0.55rem, 2.55rem); line-height: 1.16; letter-spacing: -0.012em; font-weight: 800; text-wrap: balance; }
+  .authors { margin: 0 0 4px; font-size: 1.08rem; font-weight: 700; }
+  .affil { margin: 0; font-size: 0.93rem; color: #d5dee7; }
+  .affil sup, .authors sup { font-size: 0.68em; }
+  .actions { display: flex; flex-wrap: wrap; gap: 12px; margin: 24px 0 0; }
+  .btn { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: 10px 20px; border-radius: 10px;
+         font-weight: 700; font-size: 1rem; text-decoration: none; border: 2px solid rgba(255, 255, 255, 0.7); color: #fff; }
+  .btn.primary { background: var(--accent); border-color: var(--accent); }
+  .btn:hover { filter: brightness(1.08); }
+
+  main.wrap { padding-top: 28px; padding-bottom: 8px; }
+  .lead { margin: 0 0 22px; font-size: clamp(1.12rem, 1.2vw + 0.9rem, 1.35rem); line-height: 1.42; font-weight: 600; text-wrap: pretty; }
+  .lead span { font-weight: 400; color: var(--ink2); }
+
+  figure.poster { margin: 0 0 34px; }
+  figure.poster > a { display: block; border-radius: 14px; overflow: hidden; border: 1px solid var(--line); background: #36414e;
+                      box-shadow: 0 10px 28px rgba(16, 24, 32, 0.16); }
+  figure.poster img { display: block; width: 100%; height: auto; aspect-ratio: 8 / 7; }
+  figcaption { margin-top: 10px; font-size: 0.9rem; color: var(--muted); }
+
+  h2 { margin: 0 0 14px; font-size: 1.28rem; line-height: 1.25; letter-spacing: -0.005em; }
+  section { margin: 0 0 34px; }
+
+  .cards { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 14px; }
+  .card { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 18px 18px 16px; }
+  .card .num { margin: 0; font-size: clamp(2.5rem, 6vw + 1rem, 3.3rem); line-height: 1; font-weight: 800; letter-spacing: -0.02em; }
+  .card h3 { margin: 12px 0 6px; font-size: 1.02rem; line-height: 1.3; display: flex; gap: 9px; align-items: baseline; }
+  .card h3::before { content: ""; flex: none; width: 0.72em; height: 0.72em; border-radius: 3px; background: var(--key, var(--accent)); transform: translateY(0.02em); }
+  .card p.txt { margin: 0; font-size: 0.95rem; color: var(--ink2); }
+
+  ol.steps { list-style: none; counter-reset: step; margin: 0; padding: 0; display: grid; gap: 10px; }
+  ol.steps li { counter-increment: step; display: grid; grid-template-columns: 34px 1fr; gap: 12px; align-items: start;
+                background: var(--card); border: 1px solid var(--line); border-radius: 12px; padding: 12px 14px; }
+  ol.steps li::before { content: counter(step); width: 34px; height: 34px; border-radius: 50%; display: grid; place-items: center;
+                        background: #4b647b; color: #fff; font-weight: 700; font-size: 0.95rem; }
+  ol.steps li.key::before { background: var(--accent); }
+  ol.steps strong { display: block; line-height: 1.3; }
+  ol.steps span { font-size: 0.95rem; color: var(--ink2); }
+
+  ul.plain { margin: 0; padding-left: 1.15em; }
+  ul.plain li { margin: 0 0 8px; }
+  ul.plain li::marker { color: var(--accent-text); }
+
+  footer.wrap { padding-top: 20px; padding-bottom: 44px; }
+  footer { border-top: 1px solid var(--line); margin-top: 6px; font-size: 0.92rem; color: var(--ink2); }
+  footer p { margin: 0 0 8px; }
+  .refs { color: var(--muted); font-size: 0.86rem; }
+</style>
+</head>
+<body>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow"><span>Poster · IEEE HealthCom 2026</span> <span>New York · 19–21 October 2026</span></p>
+    <h1>A Prior-Data Fitted Tabular Network Framework for Hypertension Screening from Voice Biomarkers</h1>
+    <p class="authors">Aires Miguens<sup>1</sup>, Samuel Chibuoyim Uche<sup>2</sup>, Emmanuel Agu<sup>2</sup></p>
+    <p class="affil"><sup>1</sup>Data Science Program · <sup>2</sup>Department of Computer Science<br>Worcester Polytechnic Institute, Worcester, MA, USA</p>
+    <p class="actions">
+      <a class="btn primary" href="poster.pdf" type="application/pdf">Open the poster (PDF)</a>
+      <a class="btn" href="mailto:amiguens@wpi.edu?cc=scuche@wpi.edu,emmanuel@wpi.edu&amp;subject=HyperTab%20poster%20(IEEE%20HealthCom%202026)">Email the authors</a>
+      <!-- When the paper is online, add its link here, for example:
+      <a class="btn" href="https://doi.org/...">Read the paper</a> -->
+    </p>
+  </div>
+</header>
+
+<main class="wrap">
+
+  <p class="lead">HyperTab, our in-context TabPFN framework, ranks first of 14 models for hypertension screening from voice and demographics. <span>Demographics carry most of the signal; voice alone is weak but real.</span></p>
+
+  <figure class="poster">
+    <a href="poster.pdf" type="application/pdf">
+      <img src="poster-1400.jpg" srcset="poster-1400.jpg 1400w, poster-2800.jpg 2800w" sizes="(min-width: 960px) 880px, 100vw"
+           width="1400" height="1225" decoding="async"
+           alt="The conference poster. Three numbered findings, each with a chart: HyperTab ranks first of 14 models (ROC-AUC 0.899); demographics account for about 81% of feature importance; voice alone reaches ROC-AUC 0.881 with the top 15 features. Below: why voice, how HyperTab works, and three takeaways.">
+    </a>
+    <figcaption>Tap the poster to open the PDF (1&nbsp;MB), then zoom in. Or <a href="poster-2800.jpg">open it as an image</a>.</figcaption>
+  </figure>
+
+  <section aria-labelledby="findings">
+    <h2 id="findings">Key findings</h2>
+    <div class="cards">
+      <article class="card" style="--key: #ac2b37">
+        <p class="num">0.899</p>
+        <h3>HyperTab ranks first of 14&nbsp;models</h3>
+        <p class="txt">ROC-AUC 0.899 (±&nbsp;0.088) and PR-AUC 0.970 (±&nbsp;0.020) on all 42 features. CatBoost is closest (0.873); the gap is not statistically significant.</p>
+      </article>
+      <article class="card" style="--key: var(--demo)">
+        <p class="num">≈&nbsp;81%</p>
+        <h3>Demographics dominate the signal</h3>
+        <p class="txt">Share of feature importance: age 34.8%, weight 30.0%, height 12.1%, gender 3.9%. Demographics alone (0.913) match the full model (0.899).</p>
+      </article>
+      <article class="card" style="--key: var(--voice)">
+        <p class="num">0.881</p>
+        <h3>Voice alone is weak but real</h3>
+        <p class="txt">ROC-AUC from voice alone with the top 15 voice features; 0.679 with all 38.</p>
+      </article>
+    </div>
+  </section>
+
+  <section aria-labelledby="why">
+    <h2 id="why">Why voice?</h2>
+    <p style="margin:0">About 1.3&nbsp;billion adults have hypertension and 44% are unaware of it. Cuff-based screening needs equipment and access; speech can be recorded on a phone.</p>
+  </section>
+
+  <section aria-labelledby="how">
+    <h2 id="how">How HyperTab works</h2>
+    <ol class="steps">
+      <li><div><strong>Record sustained vowels</strong><span>108 subjects, 58 hypertensive (≥&nbsp;130/80&nbsp;mmHg).</span></div></li>
+      <li><div><strong>Extract features</strong><span>5,380 windows of 50&nbsp;ms: 38 voice features + 4 demographics.</span></div></li>
+      <li><div><strong>Split by subject</strong><span>Leakage-aware 5-fold cross-validation: train and test never share a subject.</span></div></li>
+      <li class="key"><div><strong>Predict in context (TabPFN)</strong><span>Pretrained on synthetic tables; no gradient updates.</span></div></li>
+      <li><div><strong>Decide per subject</strong><span>Top-K mean of window scores, then a threshold.</span></div></li>
+    </ol>
+  </section>
+
+  <section aria-labelledby="means">
+    <h2 id="means">What it means</h2>
+    <ul class="plain">
+      <li>A pretrained tabular prior is <strong>at least on par with tuned boosting</strong> on a small cohort.</li>
+      <li>Voice alone is <strong>at best a coarse triage signal</strong>, not a replacement for clinical assessment.</li>
+      <li><strong>Limits:</strong> 108 young subjects, one country. <strong>Next:</strong> raw audio, larger cohorts, external validation.</li>
+    </ul>
+  </section>
+
+</main>
+
+<footer class="wrap">
+  <p><strong>Contact</strong> · <a href="mailto:amiguens@wpi.edu">amiguens@wpi.edu</a> · <a href="mailto:scuche@wpi.edu">scuche@wpi.edu</a> · <a href="mailto:emmanuel@wpi.edu">emmanuel@wpi.edu</a></p>
+  <p>Accepted at IEEE HealthCom 2026 (New York, <span class="nw">19–21 October 2026</span>).</p>
+  <p class="refs">Data: Ankışhan et&nbsp;al., Comput. Biol. Med., 2025. TabPFN: Hollmann et&nbsp;al., arXiv:2207.01848, 2023, and Nature, 2025. Prevalence figures: WHO, Hypertension report.</p>
+</footer>
+
+</body>
+</html>
