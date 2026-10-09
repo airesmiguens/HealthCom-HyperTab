@@ -1,22 +1,22 @@
-# HyperTab poster · IEEE HealthCom 2026
+# HyperTab · IEEE HealthCom 2026
 
 Poster for **“A Prior-Data Fitted Tabular Network Framework for Hypertension Screening from Voice Biomarkers”**
 by Aires Miguens, Samuel Chibuoyim Uche and Emmanuel Agu (Worcester Polytechnic Institute),
 accepted at IEEE HealthCom 2026 (New York, 19–21 October 2026).
 
-- Poster (PDF), the address in the QR code: <https://airesmiguens.github.io/HealthCom-HyperTab/hypertab-poster-repo-files/poster.pdf>
-- Web page: <https://airesmiguens.github.io/HealthCom-HyperTab/hypertab-poster-repo-files/>
-- <https://airesmiguens.github.io/HealthCom-HyperTab/> (printed under the QR code) redirects to the PDF via the `index.html` at the repository root.
+- **Welcome page (the address in the QR code):** <https://airesmiguens.github.io/HealthCom-HyperTab/>
+  — the `index.html` at the repository root.
+- Poster (PDF): <https://airesmiguens.github.io/HealthCom-HyperTab/hypertab-poster-repo-files/poster.pdf>
 
-## Files
+## Files in this folder
 
 | File | What it is |
 |---|---|
-| `poster.pdf` | The poster, 48 × 42 in. Its QR code opens this file |
-| `poster-qr-code.png`, `poster-qr-code.svg` | The QR code on its own, for slides or handouts |
-| `index.html` | Optional web page about the poster |
-| `poster-1400.jpg`, `poster-2800.jpg` | Poster images shown on the page (phone and desktop sizes) |
+| `poster.pdf` | The poster, 48 × 42 in |
+| `poster-1400.jpg` | Poster thumbnail shown on the welcome page |
+| `poster-2800.jpg` | Large poster image |
 | `og.jpg` | Preview image used when the link is shared |
+| `poster-qr-code.png`, `poster-qr-code.svg` | The QR code on its own, for slides or handouts |
+| `index.html` | Redirects to the welcome page |
 
-To update the poster later, replace `poster.pdf` (and the images) and keep the same file names and folder;
-the QR code keeps working because the address does not change.
+To update a file later, replace it and keep the same name and folder; the QR code keeps working because the address does not change.

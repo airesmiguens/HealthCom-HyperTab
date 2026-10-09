@@ -3,12 +3,118 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>HyperTab poster · IEEE HealthCom 2026</title>
-<meta http-equiv="refresh" content="0; url=hypertab-poster-repo-files/poster.pdf">
-<link rel="canonical" href="https://airesmiguens.github.io/HealthCom-HyperTab/hypertab-poster-repo-files/poster.pdf">
-<script>location.replace("hypertab-poster-repo-files/poster.pdf");</script>
+<title>HyperTab · IEEE HealthCom 2026 · Poster</title>
+<meta name="description" content="Poster for “A Prior-Data Fitted Tabular Network Framework for Hypertension Screening from Voice Biomarkers” (IEEE HealthCom 2026), by Aires Miguens, Samuel Chibuoyim Uche and Emmanuel Agu, Worcester Polytechnic Institute.">
+<link rel="canonical" href="https://airesmiguens.github.io/HealthCom-HyperTab/">
+<meta property="og:type" content="website">
+<meta property="og:title" content="HyperTab: hypertension screening from voice biomarkers (IEEE HealthCom 2026)">
+<meta property="og:description" content="Read the poster. Aires Miguens, Samuel Chibuoyim Uche, Emmanuel Agu · Worcester Polytechnic Institute.">
+<meta property="og:url" content="https://airesmiguens.github.io/HealthCom-HyperTab/">
+<meta property="og:image" content="https://airesmiguens.github.io/HealthCom-HyperTab/hypertab-poster-repo-files/og.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="theme-color" content="#4b647b">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%23ac2b37'/%3E%3Cpath d='M18 16v32M46 16v32M18 32h28' stroke='%23fff' stroke-width='7' stroke-linecap='round'/%3E%3C/svg%3E">
+<style>
+  :root {
+    --bg: #f3f5f7; --card: #ffffff; --ink: #1d2329; --ink2: #46525e; --muted: #647282; --line: #dde2e7;
+    --accent: #ac2b37; --accent-text: #ac2b37; --slate: #4b647b; --thumb: #e6ebf0;
+    color-scheme: light dark;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg: #12161b; --card: #1b2128; --ink: #eef1f4; --ink2: #c2cad3; --muted: #97a3b0; --line: #2d3640;
+            --accent-text: #ef8a93; --thumb: #252d36; }
+  }
+  * { box-sizing: border-box; }
+  html { -webkit-text-size-adjust: 100%; }
+  body { margin: 0; background: var(--bg); color: var(--ink);
+         font: 17px/1.5 system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; }
+  .wrap { max-width: 880px; margin: 0 auto; padding: 0 16px; }
+  a { color: var(--accent-text); text-underline-offset: 0.16em; }
+  a:focus-visible { outline: 3px solid #f2b84b; outline-offset: 3px; border-radius: 8px; }
+
+  .hero { background: linear-gradient(180deg, #4b647b 0%, #2c3542 100%); color: #fff; padding: 28px 0 34px; }
+  .eyebrow { margin: 0 0 14px; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase; color: #d5dee7; font-weight: 600; }
+  .eyebrow span { white-space: nowrap; }
+  .welcome { margin: 0 0 8px; font-size: 1rem; color: #e6edf3; }
+  h1 { margin: 0 0 18px; font-size: clamp(1.45rem, 3.6vw + 0.7rem, 2.35rem); line-height: 1.18; letter-spacing: -0.012em; font-weight: 800; text-wrap: balance; }
+  .authors { margin: 0 0 4px; font-size: 1.05rem; font-weight: 700; }
+  .affil { margin: 0; font-size: 0.92rem; color: #d5dee7; }
+  sup { font-size: 0.68em; }
+
+  main.wrap { padding-top: 26px; }
+  .prompt { margin: 0 0 14px; font-size: 1.15rem; font-weight: 700; }
+
+  .choices { display: grid; grid-template-columns: 1fr; gap: 16px; margin: 0 0 36px; }
+  .choices { max-width: 560px; }
+  a.choice { display: flex; flex-direction: column; text-decoration: none; color: inherit; background: var(--card);
+             border: 1px solid var(--line); border-radius: 16px; overflow: hidden; box-shadow: 0 8px 24px rgba(16, 24, 32, 0.10);
+             transition: transform 0.15s ease, box-shadow 0.15s ease; }
+  a.choice:hover { transform: translateY(-2px); box-shadow: 0 12px 30px rgba(16, 24, 32, 0.16); }
+  .thumb { height: 190px; background: var(--thumb); overflow: hidden; display: flex; align-items: flex-start; justify-content: center; }
+  .thumb img { display: block; }
+  .thumb.poster img { width: 100%; height: 100%; object-fit: cover; object-position: top center; }
+  .body { display: flex; align-items: center; gap: 14px; padding: 16px 18px 18px; }
+  .icon { flex: none; width: 48px; height: 48px; border-radius: 12px; display: grid; place-items: center; background: var(--slate); color: #fff; }
+  .icon svg { width: 26px; height: 26px; }
+  .label { flex: 1; min-width: 0; }
+  .label strong { display: block; font-size: 1.2rem; line-height: 1.25; }
+  .label span { display: block; font-size: 0.9rem; color: var(--muted); }
+  .open { flex: none; font-weight: 700; font-size: 0.95rem; color: var(--accent-text); white-space: nowrap; }
+
+  h2 { margin: 0 0 12px; font-size: 1.2rem; }
+  .people { display: grid; grid-template-columns: repeat(auto-fit, minmax(230px, 1fr)); gap: 12px; margin: 0 0 32px; }
+  .person { background: var(--card); border: 1px solid var(--line); border-radius: 14px; padding: 14px 16px; }
+  .person strong { display: block; font-size: 1.02rem; }
+  .person span { display: block; font-size: 0.9rem; color: var(--ink2); }
+  .person a { font-size: 0.92rem; overflow-wrap: anywhere; }
+
+  footer.wrap { border-top: 1px solid var(--line); padding-top: 18px; padding-bottom: 40px; font-size: 0.88rem; color: var(--muted); }
+  footer p { margin: 0 0 8px; }
+</style>
 </head>
 <body>
-<p>Opening the poster… <a href="hypertab-poster-repo-files/poster.pdf">Open the poster (PDF)</a></p>
+
+<header class="hero">
+  <div class="wrap">
+    <p class="eyebrow"><span>IEEE HealthCom 2026</span> · <span>New York</span> · <span>19–21 October 2026</span></p>
+    <p class="welcome">Welcome, and thank you for visiting our poster.</p>
+    <h1>A Prior-Data Fitted Tabular Network Framework for Hypertension Screening from Voice Biomarkers</h1>
+    <p class="authors">Aires Miguens<sup>1</sup>, Samuel Chibuoyim Uche<sup>2</sup>, Emmanuel Agu<sup>2</sup></p>
+    <p class="affil"><sup>1</sup>Data Science Program · <sup>2</sup>Department of Computer Science<br>Worcester Polytechnic Institute, Worcester, MA, USA</p>
+  </div>
+</header>
+
+<main class="wrap">
+  <p class="prompt">Our poster</p>
+
+  <div class="choices">
+    <a class="choice" href="hypertab-poster-repo-files/poster.pdf" type="application/pdf">
+      <div class="thumb poster"><img src="hypertab-poster-repo-files/poster-1400.jpg" width="1400" height="1225" alt="" decoding="async"></div>
+      <div class="body">
+        <div class="icon" aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="M7 14l3-4 3 3 2-2 3 3"/><path d="M9 21h6M12 18v3"/></svg>
+        </div>
+        <div class="label"><strong>The poster</strong><span>PDF · 1 MB · one page</span></div>
+        <span class="open" aria-hidden="true">Open →</span>
+      </div>
+    </a>
+
+  </div>
+
+  <h2>Authors</h2>
+  <div class="people">
+    <div class="person"><strong>Aires Miguens</strong><span>Data Science Program, WPI</span><a href="mailto:amiguens@wpi.edu">amiguens@wpi.edu</a></div>
+    <div class="person"><strong>Samuel Chibuoyim Uche</strong><span>Department of Computer Science, WPI</span><a href="mailto:scuche@wpi.edu">scuche@wpi.edu</a></div>
+    <div class="person"><strong>Emmanuel Agu</strong><span>Department of Computer Science, WPI</span><a href="mailto:emmanuel@wpi.edu">emmanuel@wpi.edu</a></div>
+  </div>
+</main>
+
+<footer class="wrap">
+  <p>Worcester Polytechnic Institute, 100 Institute Road, Worcester, MA 01609, USA.</p>
+  <p>Accepted at IEEE HealthCom 2026 (New York, 19–21 October 2026).</p>
+</footer>
+
 </body>
 </html>
